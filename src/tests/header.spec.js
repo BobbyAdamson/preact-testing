@@ -13,7 +13,6 @@ describe('Initial Test of the Header', () => {
 
 	it('Renders 3 nav items', () => {
     const context = shallow(<Header />);
-    debugger
 		expect(context.find('h1').text()).to.equal('Preact App');
 		expect(context.find(<Link />).length).to.equal(3);
 	});
